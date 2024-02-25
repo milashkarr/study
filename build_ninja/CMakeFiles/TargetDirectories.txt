@@ -1,0 +1,8 @@
+C:/Users/Lada/source/repos/study/build_ninja/CMakeFiles/edit_cache.dir
+C:/Users/Lada/source/repos/study/build_ninja/CMakeFiles/rebuild_cache.dir
+C:/Users/Lada/source/repos/study/build_ninja/bubble_sort/CMakeFiles/bubble_sort.dir
+C:/Users/Lada/source/repos/study/build_ninja/bubble_sort/CMakeFiles/edit_cache.dir
+C:/Users/Lada/source/repos/study/build_ninja/bubble_sort/CMakeFiles/rebuild_cache.dir
+C:/Users/Lada/source/repos/study/build_ninja/milana_test/CMakeFiles/milana_test.dir
+C:/Users/Lada/source/repos/study/build_ninja/milana_test/CMakeFiles/edit_cache.dir
+C:/Users/Lada/source/repos/study/build_ninja/milana_test/CMakeFiles/rebuild_cache.dir
