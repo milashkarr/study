@@ -1,0 +1,8 @@
+add_executable(complex_number_tests test_complex_number.cpp)
+
+target_link_libraries(complex_number_tests 
+	gtest_main 
+	scl_lib
+)
+
+add_test(complex_number_tests complex_number_tests)
