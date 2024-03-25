@@ -16,3 +16,4 @@ add_subdirectory(milana_test)
 add_subdirectory(scl)
 
 set(CMAKE_SUPPRESS_REGENERATION true)
+
