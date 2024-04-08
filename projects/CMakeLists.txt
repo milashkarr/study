@@ -5,6 +5,9 @@ project(kmms_prog_2023)
 enable_testing()
 add_subdirectory(lib/googletest)
 
+set(SCL_LIB "scl_lib")
+add_subdirectory(scl)
+
 add_subdirectory(bubble_sort)
 add_subdirectory(bubble_sort_mf)
 add_subdirectory(refactoring_and_print)
@@ -13,7 +16,6 @@ add_subdirectory(base_theory_tasks_p1)
 add_subdirectory(obuchaika)
 add_subdirectory(unit_test_example)
 add_subdirectory(milana_test)
-add_subdirectory(scl)
 
 set(CMAKE_SUPPRESS_REGENERATION true)
 
