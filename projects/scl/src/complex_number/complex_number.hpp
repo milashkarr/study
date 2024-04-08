@@ -13,12 +13,12 @@ namespace MAst {
         Complex();
         Complex(double x, double y);
 
-        Complex operator+ (const Complex&);
-        Complex operator- (const Complex&);
-        Complex operator* (const Complex&);
-        Complex operator/ (const Complex&);
+        Complex operator + (const Complex&);
+        Complex operator - (const Complex&);
+        Complex operator * (const Complex&);
+        Complex operator / (const Complex&);
 
-        bool operator==(const Complex& other) {
+        bool operator == (const Complex& other) {
             return x == other.x && y == other.y;
         }
 
