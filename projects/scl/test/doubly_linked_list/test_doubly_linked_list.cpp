@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "../doubly_linked_list/doubly_linked_list.hpp"
 #include <gtest/gtest.h>
 

@@ -19,7 +19,9 @@ void Vector<T>::push_back(const T& value) noexcept {
     if (size == capacity) {
         capacity *= 2;
         T* newArr = new T[capacity];
-        std::copy(arr, arr + size, newArr);
+        for (size_t i = 0; i < size; ++i) {
+            newArr[i] = arr[i];
+        }
         delete[] arr;
         arr = newArr;
     }
@@ -45,14 +47,21 @@ bool Vector<T>::insert(const int position, const T& value) {
     if (size == capacity) {
         capacity *= 2;
         T* newArr = new T[capacity];
-        std::copy(arr, arr + position, newArr);
-        std::copy(arr + position, arr + size, newArr + position + 1);
+        for (int i = 0; i < position; ++i) {
+            newArr[i] = arr[i];
+        }
+        for (int i = position; i < size; ++i) {
+            newArr[i + 1] = arr[i];
+        }
         delete[] arr;
         arr = newArr;
-    }else {
-        std::copy_backward(arr + position, arr + size, arr + size + 1);
     }
-    
+    else {
+        for (int i = size; i > position; --i) {
+            arr[i] = arr[i - 1];
+        }
+    }
+
     arr[position] = value;
     ++size;
     return true;
@@ -70,7 +79,9 @@ template <typename T>
 bool Vector<T>::remove_first(const T& value) noexcept {
     for (std::size_t i = 0; i < size; ++i) {
         if (arr[i] == value) {
-            std::copy(arr + i + 1, arr + size, arr + i);
+            for (std::size_t j = i; j < size - 1; ++j) {
+                arr[j] = arr[j + 1];
+            }
             --size;
             return true;
         }
